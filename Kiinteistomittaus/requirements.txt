@@ -1,0 +1,4 @@
+argparse
+dateutils
+requests
+git+https://github.com/VekotinVerstas/DataManagementScripts
