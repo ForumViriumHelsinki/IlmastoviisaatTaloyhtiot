@@ -83,7 +83,7 @@ def main():
     df = data_to_df(args, parsed_data)
     df['cnt'] = df['watermeter'].diff()
     # Save raw cumulative data to a file
-    save_df(args, df)
+    save_df(vars(args), df)
     # Save raw cumulative data into InfluxDB
     dataframe_into_influxdb(vars(args), df, tag_columns=['dev-id'])
     # Create and save hourly usage
